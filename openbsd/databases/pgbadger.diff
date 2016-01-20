@@ -1,0 +1,78 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/databases/pgbadger/Makefile,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 Makefile
+--- Makefile	10 Aug 2013 16:07:50 -0000	1.1.1.1
++++ Makefile	20 Jan 2016 04:36:44 -0000
+@@ -2,15 +2,19 @@
+ 
+ COMMENT =	advanced PostgreSQL log analyzer
+ 
+-DISTNAME =	pgbadger-3.5
++V =		7.2
++PKGNAME =	pgbadger-$V
+ CATEGORIES =	databases
+ 
+ HOMEPAGE =	http://dalibo.github.io/pgbadger/
+ 
+-# GPLv2
++# BSD
+ PERMIT_PACKAGE_CDROM =	Yes
+ 
+-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=pgbadger/}
++GH_ACCOUNT =	dalibo
++GH_PROJECT =	pgbadger
++GH_TAGNAME =	v$V
++
+ CONFIGURE_STYLE =	perl
+ 
+ .include <bsd.port.mk>
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/databases/pgbadger/distinfo,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 distinfo
+--- distinfo	10 Aug 2013 16:07:50 -0000	1.1.1.1
++++ distinfo	20 Jan 2016 04:36:44 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (pgbadger-3.5.tar.gz) = XSVgI+Yvc7DC+9v0eNqvYyrEe35dstuPYb+W1cFNT+U=
+-SIZE (pgbadger-3.5.tar.gz) = 106899
++SHA256 (pgbadger-7.2.tar.gz) = 7m7qnyflEsUFa2ShcEaTU5TK88pInZ/9zDzES0EwmM4=
++SIZE (pgbadger-7.2.tar.gz) = 333072
+Index: pkg/DESCR
+===================================================================
+RCS file: /cvs/ports/databases/pgbadger/pkg/DESCR,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 DESCR
+--- pkg/DESCR	10 Aug 2013 16:07:50 -0000	1.1.1.1
++++ pkg/DESCR	20 Jan 2016 04:36:44 -0000
+@@ -4,10 +4,10 @@ Perl script that aims to replace and out
+ pgFouine.
+ 
+ pgBadger is written in pure Perl language. It uses a Javascript library
+-draw graphs so that you don't need additional Perl modules or any
+-other package to install. Furthermore, this library gives us additional
+-features, such as zooming.
++to draw graphs so that you don't need additional Perl modules or any
++other package to install. Furthermore, this library adds additional
++features such as zooming.
+ 
+-pgBadger is able to autodetect your log file format (syslog, stderr or
+-csvlog). It is designed to parse huge log files, as well as gzip, zip or
+-bzip2 compressed files.
++pgBadger autodetects your log file format (syslog, stderr or csvlog).
++It is designed to parse huge log files, as well as gzip, zip or bzip2
++compressed files.
+Index: pkg/PLIST
+===================================================================
+RCS file: /cvs/ports/databases/pgbadger/pkg/PLIST,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 PLIST
+--- pkg/PLIST	10 Aug 2013 16:07:50 -0000	1.1.1.1
++++ pkg/PLIST	20 Jan 2016 04:36:44 -0000
+@@ -1,3 +1,3 @@
+ @comment $OpenBSD: PLIST,v 1.1.1.1 2013/08/10 16:07:50 landry Exp $
+ bin/pgbadger
+-@man man/man1/pgbadger.1
++@man man/man1/pgbadger.1p
