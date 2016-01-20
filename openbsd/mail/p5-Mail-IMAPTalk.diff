@@ -1,0 +1,28 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/mail/p5-Mail-IMAPTalk/Makefile,v
+retrieving revision 1.7
+diff -u -p -r1.7 Makefile
+--- Makefile	26 Jan 2015 08:50:25 -0000	1.7
++++ Makefile	20 Jan 2016 04:49:01 -0000
+@@ -3,7 +3,7 @@
+ COMMENT = 	IMAP client interface with lots of features
+ 
+ MODULES =	cpan
+-DISTNAME =	Mail-IMAPTalk-3.01
++DISTNAME =	Mail-IMAPTalk-4.01
+ CATEGORIES =	mail
+ 
+ # Perl
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/mail/p5-Mail-IMAPTalk/distinfo,v
+retrieving revision 1.3
+diff -u -p -r1.3 distinfo
+--- distinfo	26 Jan 2015 08:50:25 -0000	1.3
++++ distinfo	20 Jan 2016 04:49:01 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (Mail-IMAPTalk-3.01.tar.gz) = JpoWvy5pnGkxDrBkAiKvWA/1VBCXFABsIdaIBY6xmE4=
+-SIZE (Mail-IMAPTalk-3.01.tar.gz) = 41066
++SHA256 (Mail-IMAPTalk-4.01.tar.gz) = fzPa/sj7t1y3Z4Y7j3ly2fA2Hl+UqzwnwPJDU1Oku20=
++SIZE (Mail-IMAPTalk-4.01.tar.gz) = 44516

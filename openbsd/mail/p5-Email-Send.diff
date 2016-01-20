@@ -1,0 +1,29 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/mail/p5-Email-Send/Makefile,v
+retrieving revision 1.14
+diff -u -p -r1.14 Makefile
+--- Makefile	5 Nov 2015 19:08:58 -0000	1.14
++++ Makefile	20 Jan 2016 04:47:19 -0000
+@@ -4,8 +4,7 @@ COMMENT= 	simply sending email
+ 
+ MODULES=	cpan
+ 
+-DISTNAME=	Email-Send-2.194
+-REVISION=	1
++DISTNAME=	Email-Send-2.201
+ CATEGORIES=	mail
+ 
+ # Perl
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/mail/p5-Email-Send/distinfo,v
+retrieving revision 1.7
+diff -u -p -r1.7 distinfo
+--- distinfo	18 Jan 2015 03:14:23 -0000	1.7
++++ distinfo	20 Jan 2016 04:47:19 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (Email-Send-2.194.tar.gz) = Tu3gTV0Ic9ZWAUsY0jYvPsgFmKonQ3d5FXnolEomJyk=
+-SIZE (Email-Send-2.194.tar.gz) = 25486
++SHA256 (Email-Send-2.201.tar.gz) = S77JM1WNfMm4FSutht0xPeJ3ohqJtOqD2E5hWH6V28Y=
++SIZE (Email-Send-2.201.tar.gz) = 30041
