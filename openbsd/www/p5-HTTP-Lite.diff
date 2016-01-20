@@ -1,0 +1,29 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/www/p5-HTTP-Lite/Makefile,v
+retrieving revision 1.5
+diff -u -p -r1.5 Makefile
+--- Makefile	11 Oct 2013 23:51:42 -0000	1.5
++++ Makefile	20 Jan 2016 05:32:08 -0000
+@@ -3,8 +3,7 @@
+ COMMENT =	pure Perl HTTP client
+ 
+ MODULES =	cpan
+-DISTNAME =	HTTP-Lite-2.1.6
+-REVISION =	0
++DISTNAME =	HTTP-Lite-2.44
+ CATEGORIES =	www
+ 
+ MAINTAINER =	Jason Dixon <jdixon@openbsd.org>
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/www/p5-HTTP-Lite/distinfo,v
+retrieving revision 1.2
+diff -u -p -r1.2 distinfo
+--- distinfo	18 Jan 2015 03:15:45 -0000	1.2
++++ distinfo	20 Jan 2016 05:32:08 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (HTTP-Lite-2.1.6.tar.gz) = dc28pMNRnpTY5LYX5zRxHcGlv7ZJC8pCS+IQkGobfLA=
+-SIZE (HTTP-Lite-2.1.6.tar.gz) = 276955
++SHA256 (HTTP-Lite-2.44.tar.gz) = OOQ9eRHPwU46OPA4K2zHptVZMH0jsQnOc6x9JKmz53w=
++SIZE (HTTP-Lite-2.44.tar.gz) = 287819
