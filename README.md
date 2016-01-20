@@ -2,7 +2,7 @@
 
 This work is mostly done offline, but the (semi-) finished port tarballs and diffs may be uploaded here.
 
-Various *BSD ports in development, rejections, etc.
+Various *BSD ports in development, updates, rejections, etc.
 
 Comments are at the top of the respective Makefile.
 
