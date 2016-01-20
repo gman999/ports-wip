@@ -1,0 +1,28 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/devel/p5-Path-Tiny/Makefile,v
+retrieving revision 1.4
+diff -u -p -r1.4 Makefile
+--- Makefile	15 Aug 2015 21:08:43 -0000	1.4
++++ Makefile	20 Jan 2016 04:44:39 -0000
+@@ -2,7 +2,7 @@
+ 
+ COMMENT =		file path utility
+ 
+-DISTNAME =		Path-Tiny-0.072
++DISTNAME =		Path-Tiny-0.076
+ CATEGORIES =		devel
+ 
+ # Apachev2
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/devel/p5-Path-Tiny/distinfo,v
+retrieving revision 1.4
+diff -u -p -r1.4 distinfo
+--- distinfo	15 Aug 2015 21:08:43 -0000	1.4
++++ distinfo	20 Jan 2016 04:44:39 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (Path-Tiny-0.072.tar.gz) = 11B8eCLU9/YKUynSbIr84xAizZLQKwEeNnzGoe6uaYE=
+-SIZE (Path-Tiny-0.072.tar.gz) = 80366
++SHA256 (Path-Tiny-0.076.tar.gz) = ELr9lvVh8OgRvnZNVX7/+9U7qbBEp5yC6X244n1cx2Q=
++SIZE (Path-Tiny-0.076.tar.gz) = 81008
