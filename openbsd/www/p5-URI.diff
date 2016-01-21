@@ -1,0 +1,53 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/www/p5-URI/Makefile,v
+retrieving revision 1.33
+diff -u -p -r1.33 Makefile
+--- Makefile	25 Jul 2015 16:30:01 -0000	1.33
++++ Makefile	21 Jan 2016 05:07:26 -0000
+@@ -3,7 +3,7 @@
+ COMMENT =	library to parse Uniform Resource Identifiers
+ 
+ MODULES =	cpan
+-DISTNAME =	URI-1.69
++DISTNAME =	URI-1.71
+ CATEGORIES =	www
+ 
+ # Perl
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/www/p5-URI/distinfo,v
+retrieving revision 1.17
+diff -u -p -r1.17 distinfo
+--- distinfo	25 Jul 2015 16:30:01 -0000	1.17
++++ distinfo	21 Jan 2016 05:07:26 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (URI-1.69.tar.gz) = t0sW6mJrb4BhghuzUGdMY4qYvh/HZurbJP7GY1mYtC0=
+-SIZE (URI-1.69.tar.gz) = 99836
++SHA256 (URI-1.71.tar.gz) = nI7KDX8550u8FHBik+ZTtpkjjusadpDMnBNvuMJkQRU=
++SIZE (URI-1.71.tar.gz) = 100141
+Index: pkg/DESCR
+===================================================================
+RCS file: /cvs/ports/www/p5-URI/pkg/DESCR,v
+retrieving revision 1.2
+diff -u -p -r1.2 DESCR
+--- pkg/DESCR	15 Apr 2010 14:29:18 -0000	1.2
++++ pkg/DESCR	21 Jan 2016 05:07:26 -0000
+@@ -1,12 +1,12 @@
+-This package contains the URI.pm module with friends.  The module
+-implements the URI class.  Objects of this class represent Uniform
++This package contains the URI.pm module with friends. The module
++implements the URI class. Objects of this class represent Uniform
+ Resource Identifier (URI) references as specified in RFC 2396.
+ 
+ URI objects can be used to access and manipulate the various
+-components that make up these strings.  There are also methods to
++components that make up these strings. There are also methods to
+ combine URIs in various ways.
+ 
+ The URI class replaces the URI::URL class that used to be distributed
+-with libwww-perl.  This package contains an emulation of the old
+-URI::URL interface.  The emulated URI::URL implements both the old
++with libwww-perl. This package contains an emulation of the old
++URI::URL interface. The emulated URI::URL implements both the old
+ and the new interface.
