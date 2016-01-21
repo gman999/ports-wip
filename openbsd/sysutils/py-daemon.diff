@@ -1,0 +1,81 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/sysutils/py-daemon/Makefile,v
+retrieving revision 1.7
+diff -u -p -r1.7 Makefile
+--- Makefile	29 Sep 2015 10:52:35 -0000	1.7
++++ Makefile	21 Jan 2016 04:48:45 -0000
+@@ -2,10 +2,9 @@
+ 
+ COMMENT=		library to implement a Unix daemon process
+ 
+-MODPY_EGG_VERSION=	1.6
++MODPY_EGG_VERSION=	2.1.0
+ DISTNAME=		python-daemon-${MODPY_EGG_VERSION}
+ PKGNAME=		py-daemon-${MODPY_EGG_VERSION}
+-REVISION=		2
+ 
+ CATEGORIES=		sysutils
+ 
+Index: distinfo
+===================================================================
+RCS file: /cvs/ports/sysutils/py-daemon/distinfo,v
+retrieving revision 1.2
+diff -u -p -r1.2 distinfo
+--- distinfo	18 Jan 2015 03:15:14 -0000	1.2
++++ distinfo	21 Jan 2016 04:48:45 -0000
+@@ -1,2 +1,2 @@
+-SHA256 (python-daemon-1.6.tar.gz) = FmX7Fr/q5y8Wqi3kC8dWYUWL1Ccxp9RjqRGo1er5bAs=
+-SIZE (python-daemon-1.6.tar.gz) = 41564
++SHA256 (python-daemon-2.1.0.tar.gz) = rjD21Nc5lmUxf5DZhmhs9FWhs+YePAQswAo5o047SCU=
++SIZE (python-daemon-2.1.0.tar.gz) = 74277
+Index: pkg/DESCR
+===================================================================
+RCS file: /cvs/ports/sysutils/py-daemon/pkg/DESCR,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 DESCR
+--- pkg/DESCR	12 Oct 2010 16:49:09 -0000	1.1.1.1
++++ pkg/DESCR	21 Jan 2016 04:48:45 -0000
+@@ -1,5 +1,5 @@
+ This library implements the well-behaved daemon specification of PEP
+-3143, "Standard daemon process library".
++3143, "Standard daemon process library."
+ 
+ A well-behaved Unix daemon process is tricky to get right, but the
+ required steps are much the same for every daemon program. A
+Index: pkg/PLIST
+===================================================================
+RCS file: /cvs/ports/sysutils/py-daemon/pkg/PLIST,v
+retrieving revision 1.1.1.1
+diff -u -p -r1.1.1.1 PLIST
+--- pkg/PLIST	12 Oct 2010 16:49:09 -0000	1.1.1.1
++++ pkg/PLIST	21 Jan 2016 04:48:45 -0000
+@@ -2,17 +2,14 @@
+ lib/python${MODPY_VERSION}/site-packages/daemon/
+ lib/python${MODPY_VERSION}/site-packages/daemon/__init__.py
+ lib/python${MODPY_VERSION}/site-packages/daemon/__init__.pyc
++lib/python${MODPY_VERSION}/site-packages/daemon/_metadata.py
++lib/python${MODPY_VERSION}/site-packages/daemon/_metadata.pyc
+ lib/python${MODPY_VERSION}/site-packages/daemon/daemon.py
+ lib/python${MODPY_VERSION}/site-packages/daemon/daemon.pyc
+ lib/python${MODPY_VERSION}/site-packages/daemon/pidfile.py
+ lib/python${MODPY_VERSION}/site-packages/daemon/pidfile.pyc
+ lib/python${MODPY_VERSION}/site-packages/daemon/runner.py
+ lib/python${MODPY_VERSION}/site-packages/daemon/runner.pyc
+-lib/python${MODPY_VERSION}/site-packages/daemon/version/
+-lib/python${MODPY_VERSION}/site-packages/daemon/version/__init__.py
+-lib/python${MODPY_VERSION}/site-packages/daemon/version/__init__.pyc
+-lib/python${MODPY_VERSION}/site-packages/daemon/version/version_info.py
+-lib/python${MODPY_VERSION}/site-packages/daemon/version/version_info.pyc
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+@@ -20,5 +17,6 @@ lib/python${MODPY_VERSION}/site-packages
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/not-zip-safe
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+ lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+-share/doc/py-daemon/
+-share/doc/py-daemon/FAQ
++lib/python${MODPY_VERSION}/site-packages/python_daemon-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/version_info.json
++share/doc/${MODPY_PY_PREFIX}daemon/
++share/doc/${MODPY_PY_PREFIX}daemon/FAQ
