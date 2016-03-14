@@ -26,8 +26,13 @@ FLAVORS =		python3
 FLAVOR ?=
 
 WRKDIST =       ${WRKDIR}/stem-1.4.1
+DOCDIR =	${PREFIX}/share/doc/py-stem/
 
 #do-test:
 #	cd ${WRKDIST} && ${MODPY_BIN} run_tests.py
+
+post-install:
+	cd ${WRKDIST}/docs && make text
+	cp -R ${WRKDIST}/docs/_build/text ${PREFIX}/share/doc/py-stem/
 
 .include <bsd.port.mk>
