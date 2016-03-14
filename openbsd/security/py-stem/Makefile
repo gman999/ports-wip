@@ -28,8 +28,8 @@ FLAVOR ?=
 WRKDIST =       ${WRKDIR}/stem-1.4.1
 DOCDIR =	${PREFIX}/share/doc/py-stem/
 
-#do-test:
-#	cd ${WRKDIST} && ${MODPY_BIN} run_tests.py
+do-test:
+	cd ${WRKDIST} && ${MODPY_BIN} run_tests.py -a
 
 post-install:
 	cd ${WRKDIST}/docs && make text
