@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
 
-COMMENT =		python controller library for Tor
+COMMENT =		Python controller library for Tor
 
 MODPY_EGG_VERSION =	1.4.1b
 DISTNAME =		stem-${MODPY_EGG_VERSION}
@@ -33,6 +33,6 @@ do-test:
 
 post-install:
 	cd ${WRKDIST}/docs && make text
-	cp -R ${WRKDIST}/docs/_build/text ${PREFIX}/share/doc/py-stem/
+	cp -R ${WRKDIST}/docs/_build/text ${DOCDIR}
 
 .include <bsd.port.mk>
