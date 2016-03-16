@@ -1,3 +1,2 @@
-Stem is a Python controller library for Tor. With it you can use Tor's
-control protocol to script against the Tor process, or build things such
-as net/arm.
+Stem is a Python controller library for Tor. The library allows
+scripting against the Tor process, or for building ports such as net/arm.

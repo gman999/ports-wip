@@ -32,7 +32,9 @@ do-test:
 	cd ${WRKDIST} && ${MODPY_BIN} run_tests.py -a
 
 post-install:
+	${INSTALL_DATA_DIR} ${DOCDIR}
 	cd ${WRKDIST}/docs && make text
-	cp -R ${WRKDIST}/docs/_build/text ${DOCDIR}
+	${INSTALL_DATA} ${WRKDIST}/docs/_build/text/*.txt ${DOCDIR}
+	${INSTALL_DATA} ${WRKDIST}/LICENSE ${DOCDIR}
 
 .include <bsd.port.mk>
