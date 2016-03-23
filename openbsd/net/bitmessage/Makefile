@@ -1,8 +1,6 @@
 # $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
-# need to port py-elliptic (https://github.com/yann2192/pyelliptic)
 
-
-COMMENT =		Bitcoin messaging platform
+COMMENT =		p2p encrypted messaging platform
 
 V =			0.4.4
 PKGNAME =		bitmessage-${V}
