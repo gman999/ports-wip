@@ -1,0 +1,19 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/
+lib/python${MODPY_VERSION}/site-packages/pyelliptic-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/pyelliptic-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/pyelliptic-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/pyelliptic-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/pyelliptic-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/__init__.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/arithmetic.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/arithmetic.pyc
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/cipher.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/cipher.pyc
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/ecc.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/ecc.pyc
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/hash.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/hash.pyc
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/openssl.py
+lib/python${MODPY_VERSION}/site-packages/pyelliptic/openssl.pyc

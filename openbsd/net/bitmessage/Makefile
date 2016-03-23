@@ -7,14 +7,9 @@ COMMENT =		Bitcoin messaging platform
 V =			0.4.4
 PKGNAME =		bitmessage-${V}
 
-# for any port that creates shared libraries.
-# both libtool and cmake handle this automatically.
-# for libtool-based ports, have a look at WRKBUILD/shared_libs.log
-#SHARED_LIBS =		???
-
 CATEGORIES =		net
 
-HOMEPAGE =		https://bitmessage.org/wiki/Main_Page
+HOMEPAGE =		https://bitmessage.org/
 
 MAINTAINER =		George Rosamond <george@nycbug.org>
 
@@ -27,18 +22,30 @@ GH_TAGNAME =		v${V}
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
+
 RUN_DEPENDS =		databases/py-sqlite2 \
 			x11/py-qt4 \
 			x11/hicolor-icon-theme \
 			security/openssl \
-			devel/desktop-file-utils
+			devel/desktop-file-utils \
+			net/py-socks \
+			security/py-elliptic
 
 NO_BUILD =		Yes
 NO_TEST =		Yes
 
 WRKDIST =		${WRKDIR}/PyBitmessage-${V}
+DOCDIR =		${PREFIX}/share/doc/bitmessage/
+
+post-extract:
+	gunzip ${WRKDIST}/man/pybitmessage.1.gz
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/src/*.py ${PREFIX}/bin
+
+post-install:
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA} ${WRKDIST}/{LICENSE,README.md} ${DOCDIR}
+	${INSTALL_MAN} ${WRKDIST}/man/pybitmessage.1 ${PREFIX}/man/man1/pybitmessage.1
 
 .include <bsd.port.mk>
