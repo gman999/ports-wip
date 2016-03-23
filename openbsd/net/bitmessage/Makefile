@@ -34,6 +34,7 @@ NO_TEST =		Yes
 
 WRKDIST =		${WRKDIR}/PyBitmessage-${V}
 DOCDIR =		${PREFIX}/share/doc/bitmessage/
+MANDIR =		${PREFIX}/man/man1/
 
 post-extract:
 	gunzip ${WRKDIST}/man/pybitmessage.1.gz
@@ -44,6 +45,6 @@ do-install:
 post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKDIST}/{LICENSE,README.md} ${DOCDIR}
-	${INSTALL_MAN} ${WRKDIST}/man/pybitmessage.1 ${PREFIX}/man/man1/pybitmessage.1
+	${INSTALL_MAN} ${WRKDIST}/man/pybitmessage.1 ${MANDIR}
 
 .include <bsd.port.mk>

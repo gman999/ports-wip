@@ -1,0 +1,23 @@
+$ /usr/local/bin/bitmessagemain.py  
+Loading existing config files from /home/user/.config/PyBitmessage/
+2016-03-23 15:25:07,223 - DEBUG - Database file already exists.
+Could not read the Namecoin config file probably because you don't have Namecoin installed. That's ok; we don't really need it. Detailed error message: [Errno 2] No such file or directory: '/home/user/.namecoin/namecoin.conf'
+2016-03-23 15:25:07,238 - DEBUG - Loaded 0 objects from disk into the objectProcessorQueue.
+2016-03-23 15:25:07,242 - DEBUG - reloading keys from keys.dat file
+2016-03-23 15:25:07,265 - ERROR - Could not determine filesystem type. /home/user/.config/PyBitmessage/keys.dat
+2016-03-23 15:25:07,268 - DEBUG - reloading subscriptions...
+Traceback (most recent call last):
+  File "/usr/local/bin/bitmessagemain.py", line 272, in <module>
+    mainprogram.start()
+  File "/usr/local/bin/bitmessagemain.py", line 204, in start
+    shared.reloadBroadcastSendersForWhichImWatching()
+  File "/usr/local/bin/shared.py", line 320, in reloadBroadcastSendersForWhichImWatching
+    MyECSubscriptionCryptorObjects[hash] = highlevelcrypto.makeCryptor(privEncryptionKey.encode('hex'))
+  File "/usr/local/bin/highlevelcrypto.py", line 8, in makeCryptor
+    cryptor = pyelliptic.ECC(curve='secp256k1',privkey=privkey_bin,pubkey=pubkey_bin)
+  File "/usr/local/lib/python2.7/site-packages/pyelliptic/ecc.py", line 84, in __init__
+    pubkey_x, pubkey_y = ECC._decode_pubkey(pubkey)
+  File "/usr/local/lib/python2.7/site-packages/pyelliptic/ecc.py", line 152, in _decode_pubkey
+    raise Exception("[ECC] Unsupported pubkey point conversion form")
+Exception: [ECC] Unsupported pubkey point conversion form
+
