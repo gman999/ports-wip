@@ -23,21 +23,6 @@ MODULES =		lang/python
 MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
 
-#RUN_DEPENDS =		security/py-openssl \
-#			net/py-ipaddress \
-#			devel/py-six \
-#			devel/py-enum34 \
-#			net/py-idna \
-#			devel/py-cparser \
-#			devel/py-setuptools \
-#			converters/libiconv \
-#			devel/gettext \
-#			devel/libffi \
-#			archivers/bzip2 \
-#			devel/py-asn1 \
-#			security/py-cryptography \
-#			devel/py-cffi
-
 NO_TEST =		Yes
 
 .include <bsd.port.mk>
