@@ -1,5 +1,4 @@
 # $OpenBSD: Makefile.template,v 1.72 2015/04/08 17:53:19 sthen Exp $
-# COLLISION WITH SYSMON AND SYSMOND
 
 
 COMMENT =		Lightweight network monitoring tool with alerts

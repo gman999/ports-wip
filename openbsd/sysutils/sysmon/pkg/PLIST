@@ -3,7 +3,6 @@
 @bin bin/sysmond
 share/doc/sysmon/
 share/doc/sysmon/Changes.html
-share/doc/sysmon/PORTING
 share/doc/sysmon/README
 share/doc/sysmon/binaries.html
 share/doc/sysmon/config.html
@@ -11,7 +10,6 @@ share/doc/sysmon/docs.html
 share/doc/sysmon/index.html
 share/doc/sysmon/jclient.jpg
 share/doc/sysmon/net-example.png
-share/doc/sysmon/reporting.xml-spec.txt
 share/doc/sysmon/sysmon.conf.man.html
 share/doc/sysmon/sysmon.jpg
 share/doc/sysmon/sysmon.man.html
