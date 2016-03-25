@@ -15,8 +15,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		ssl
 
-MASTER_SITES =		ftp://puck.nether.net/pub/jared/ \
-			http://titan.oxeo.com/mirror/sysmon.org/
+MASTER_SITES =		ftp://puck.nether.net/pub/jared/
 
 WANTLIB +=		c crypto curses ncurses pthread
 
@@ -27,11 +26,15 @@ NO_TEST =		Yes
 
 DOCDIR =		${PREFIX}/share/doc/sysmon/
 EXAMPLESDIR =		${PREFIX}/share/examples/sysmon/
+MANDIR =		${PREFIX}/man
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR} ${EXAMPLESDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/src/{sysmon,sysmond} ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKDIST}/docs/{*.html,README,*.jpg,*.png} ${DOCDIR}
-	${INSTALL_DATA} ${WRKDIST}/examples/*.dist ${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKDIST}/examples/sysmon.conf.dist ${EXAMPLESDIR}
+	${INSTALL_MAN} ${WRKDIST}/docs/sysmon.man ${MANDIR}/man1/sysmon.1
+	${INSTALL_MAN} ${WRKDIST}/docs/sysmon.conf.man \
+		${MANDIR}/man5/sysmon.conf.5
 
 .include <bsd.port.mk>

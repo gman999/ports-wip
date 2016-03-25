@@ -1,6 +1,8 @@
 @comment $OpenBSD$
 @bin bin/sysmon
 @bin bin/sysmond
+@man man/man1/sysmon.1
+@man man/man5/sysmon.conf.5
 share/doc/sysmon/
 share/doc/sysmon/Changes.html
 share/doc/sysmon/README
