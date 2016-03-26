@@ -25,13 +25,15 @@ CONFIGURE_STYLE =	gnu
 NO_TEST =		Yes
 
 DOCDIR =		${PREFIX}/share/doc/sysmon/
+DOCS =			{README,*.html,*.jpg,*.png,*.txt}
 EXAMPLESDIR =		${PREFIX}/share/examples/sysmon/
 MANDIR =		${PREFIX}/man
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR} ${EXAMPLESDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/src/{sysmon,sysmond} ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKDIST}/docs/{*.html,README,*.jpg,*.png} ${DOCDIR}
+	${INSTALL_DATA} ${WRKDIST}/docs/${DOCS} ${DOCDIR}
+	${INSTALL_DATA} ${WRKDIST}/LICENSE ${DOCDIR}
 	${INSTALL_DATA} ${WRKDIST}/examples/sysmon.conf.dist ${EXAMPLESDIR}
 	${INSTALL_MAN} ${WRKDIST}/docs/sysmon.man ${MANDIR}/man1/sysmon.1
 	${INSTALL_MAN} ${WRKDIST}/docs/sysmon.conf.man \
