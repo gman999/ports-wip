@@ -19,3 +19,4 @@ share/doc/sysmon/sysmon.jpg
 share/doc/sysmon/sysmon.man.html
 share/examples/sysmon/
 share/examples/sysmon/sysmon.conf.dist
+@rcscript ${RCDIR}/sysmond

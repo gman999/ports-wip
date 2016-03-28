@@ -12,9 +12,8 @@ MAINTAINER =		George Rosamond <george@nycbug.org>
 #GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		ftp://puck.nether.net/pub/jared/
-
-RUN_DEPENDS =		net/net-snmp
+MASTER_SITES =		ftp://puck.nether.net/pub/jared/ \
+			http://mirrors.nycbug.org/pub/distfiles/
 
 WANTLIB =		c crypto curses ncurses pthread ssl
 
