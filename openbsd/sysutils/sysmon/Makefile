@@ -20,6 +20,7 @@ WANTLIB =		c crypto curses ncurses pthread ssl
 
 USE_GMAKE =		Yes
 CONFIGURE_STYLE =	gnu
+CONFIGURE_ARGS =	--enable-ipv6
 AUTOCONF_VERSION =	2.68
 
 NO_TEST =		Yes
