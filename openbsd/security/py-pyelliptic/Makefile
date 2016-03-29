@@ -20,6 +20,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 MODULES =		lang/python
 MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
+
 RUN_DEPENDS =		security/py-openssl
 
 NO_TEST =		Yes
