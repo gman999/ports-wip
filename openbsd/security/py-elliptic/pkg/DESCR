@@ -1,2 +1,0 @@
-Python OpenSSL wrapper utilizing modern cryptography compatible with
-Python 3. It supports ECC, AES, HMAC, Blowfish among other algorithms.

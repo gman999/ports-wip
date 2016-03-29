@@ -8,8 +8,6 @@ DISTNAME =		pyelliptic-${MODPY_EGG_VERSION}
 PKGNAME =		py-pyelliptic-${V}
 WRKDIST =		${WRKDIR}/pyelliptic-${V}
 
-SUBST_VARS +=		V
-
 CATEGORIES =		security
 
 HOMEPAGE =		https://github.com/yann2192/pyelliptic/
@@ -22,6 +20,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 MODULES =		lang/python
 MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
+RUN_DEPENDS =		security/py-openssl
 
 NO_TEST =		Yes
 
