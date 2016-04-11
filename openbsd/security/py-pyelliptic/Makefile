@@ -3,10 +3,10 @@
 COMMENT =		Python OpenSSL wrapper
 
 MODPY_EGG_VERSION =	1.5.7
-V =			${MODPY_EGG_VERSION:S/b//}
 DISTNAME =		pyelliptic-${MODPY_EGG_VERSION}
-PKGNAME =		py-pyelliptic-${V}
-WRKDIST =		${WRKDIR}/pyelliptic-${V}
+PKGNAME =		py-pyelliptic-${MODPY_EGG_VERSION}
+
+WRKDIST =		${WRKDIR}/pyelliptic-${MODPY_EGG_VERSION}
 
 CATEGORIES =		security
 

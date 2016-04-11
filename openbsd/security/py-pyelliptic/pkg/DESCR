@@ -1,3 +1,3 @@
 Pyelliptic is a Python OpenSSL wrapper utilizing modern cryptography compatible
-with Python 3. It supports asymmetric algorithms with elliptic curve support, in
-addition to a variety of symmetric algorithms.
+with Python 3. It supports asymmetric algorithms with elliptic curve support,
+in addition to a variety of symmetric algorithms.
