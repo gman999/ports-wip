@@ -3,6 +3,7 @@
 @bin bin/sysmond
 @man man/man1/sysmon.1
 @man man/man5/sysmon.conf.5
+share/doc/pkg-readmes/${FULLPKGNAME}
 share/doc/sysmon/
 share/doc/sysmon/Changes.html
 share/doc/sysmon/LICENSE
