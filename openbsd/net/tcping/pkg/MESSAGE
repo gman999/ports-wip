@@ -1,0 +1,4 @@
+
+Using tcping:
+
+tcping [-q] [-t timeout_sec] [-u timeout_usec] <host> <port>

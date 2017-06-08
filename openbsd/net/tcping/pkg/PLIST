@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@bin bin/tcping
+share/doc/tcping/
+share/doc/tcping/LICENSE
+share/doc/tcping/README
