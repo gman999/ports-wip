@@ -7,3 +7,5 @@ $ pkg_add -D unsigned ./$package.tgz
 ````
 
 One might consider also downloading the relevant dependencies as packages to keep everything on the same page.
+
+SHA256.sig files provides the sha256 checksums purely to confirm the files downloaded are identical to the files here in this repository.
