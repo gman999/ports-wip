@@ -10,7 +10,7 @@ MASTER_SITES = 		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/archive/
 
 CATEGORIES =		net www
 
-HOMEPAGE =		https://www.torproject.org/docs/pluggable-transports
+HOMEPAGE =		https://www.torproject.org/docs/pluggable-transports/
 
 MAINTAINER =		Sean Levy <attila@stalphonsos.com>
 
