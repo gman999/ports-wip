@@ -1,0 +1,2 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/UNKNOWN-0.0.0-py${MODPY_VERSION}.egg-info
