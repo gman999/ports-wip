@@ -1,7 +1,8 @@
 # $OpenBSD: Makefile.template,v 1.76 2017/02/25 16:04:20 danj Exp $
 # MODPY_VERSION, ENV=UTF-8 with patch to googler*?, TESTS DEP shells/bash
+# is post-install the best place for the sed?
 
-COMMENT =	Google search from the shell
+COMMENT =	Google search tools from the shell
 
 V =		3.3
 PKGNAME =	googler-${V}
@@ -33,5 +34,8 @@ MANDIR =		${PREFIX}/man
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/googler ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/googler.1 ${MANDIR}/man1
+
+post-install:
+	sed -i.bak 's/^ENABLE_SELF_UPGRADE_MECHANISM = True$$/ENABLE_SELF_UPGRADE_MECHANISM = False/' ${PREFIX}/bin/googler
 
 .include <bsd.port.mk>
