@@ -1,5 +1,5 @@
 # $OpenBSD: Makefile.template,v 1.76 2017/02/25 16:04:20 danj Exp $
-# MODPY_VERSION, ENV=UTF-8 with patch to googler*?
+# MODPY_VERSION, ENV=UTF-8 with patch to googler*?, TESTS DEP shells/bash
 
 COMMENT =	Google search from the shell
 
@@ -23,6 +23,10 @@ MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 FLAVORS =		python3
 
 NO_BUILD =		Yes
+
+#TEST_DEPENDS =		shells/bash
+
+#TEST_TARGET =		tests
 
 MANDIR =		${PREFIX}/man
 
